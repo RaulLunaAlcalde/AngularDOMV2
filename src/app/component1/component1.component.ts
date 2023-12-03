@@ -6,6 +6,9 @@ import {yellowSubmarine} from './funcions.js';
 import {changeSize} from "./funcions.js";
 // @ts-ignore
 import {countWords} from "./funcions.js";
+// @ts-ignore
+import {mostrarValors} from "./funcions.js";
+
 
 @Component({
   selector: 'app-component1',
@@ -31,6 +34,9 @@ ngOnInit(){
 
   let img = document.getElementById("imatge") as HTMLImageElement
   img.src = "./assets/gatigos.jpg"
+
+  mostrarValors();
 }
+
 }
 

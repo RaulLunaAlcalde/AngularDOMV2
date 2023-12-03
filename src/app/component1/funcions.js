@@ -15,3 +15,18 @@ export function countWords() {
   let numeroFinal = document.getElementById('numeroPraules')
   numeroFinal.innerHTML="Numero de paraules: "+ paraules.length
 }
+
+
+//Raul
+
+// funciones.js
+
+export function mostrarValors() {
+  let llistaDesplegable = document.getElementById("menuOpcions");
+  let divResultat = document.getElementById("resultats");
+  let totsElsValors = [];
+  for (let i = 0; i < llistaDesplegable.options.length; i++) {
+    totsElsValors.push(llistaDesplegable.options[i].value);
+  }
+  divResultat.innerHTML = "Todos los valores: " + totsElsValors.join(", ");
+}
